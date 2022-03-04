@@ -75,3 +75,6 @@ Declarative pipeline
 				IQ - How to run a particular stage on a node ?	
 				
 			label - Both at agent and pipeline level we can use this type of agent.	
+			docker - 
+			
+			
