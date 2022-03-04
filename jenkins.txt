@@ -1,0 +1,35 @@
+Jenkins pipeline 
+	- This is type of job we got in jenkins where all the configuration of the job 
+	  is done through code.
+	- Groovy is the language used to write pipeline jobs in jenkins.
+    - The main pipeline is writen in a file called Jenkinsfile.	
+
+Types of jenksin pipeline jobs 
+
+scripted pipeline
+	- Old way of defining jenkins pipeline job.
+	- All the code /configuration is writen inside node block 
+		
+		node {
+			
+
+		}
+
+		
+Declarative pipeline
+	- New way of defining jenkins pipeline job.
+	- All the code /configuration is writen inside pipeline block 
+		
+		pipeline {
+			
+			
+		}
+
+How to define a pipeline job ? 
+	1.  - We can directly write the pipeline script inside the job using inline script block.
+		- It is difficult to main the versioning of job.
+		
+	2. we write the script in a file called Jenkinsfile and we source it from a SCM (Source code management).
+		
+		
+		
