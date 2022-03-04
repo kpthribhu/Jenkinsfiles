@@ -77,4 +77,4 @@ Declarative pipeline
 			label - Both at agent and pipeline level we can use this type of agent.	
 			docker - 
 			
-			
+Note: Install blueocen plugin dashborad for pipeline jobs 			
