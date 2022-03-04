@@ -31,5 +31,40 @@ How to define a pipeline job ?
 		
 	2. we write the script in a file called Jenkinsfile and we source it from a SCM (Source code management).
 		
+	
+Declarative pipeline
+	The required block are AGENT, STAGES - STAGE, STEPS - STEPS
+		pipeline {
+			agent any 
+			stages {
+				stage('Build') {
+					steps {
+					
+					}
+				}
+				stage('Test'){
+					steps {
+					
+					}
+				}
+				stage('Deploy'){
+					steps {
+					
+					}
+				}
+				stage('My-stage'){
+					steps {
+					
+					}
+				}	
+			}
+		}
 		
+	AGENT 
+		- An agent is used to define the execution scope of the stage.
+		- AGENT is used to distribute the workload of different stages.
+		- each stage will be assigned with a executor based on agent configuration.
 		
+		Types of agent 
+			any - Runs pipeline agents on any available executors.
+			none - 
