@@ -1,20 +1,22 @@
 pipeline {
 	agent { label 'master' } 
 	stages {
-		stage('Build') { 
-			steps {
-				sh 'sleep 5; echo "This is a Build stage"'
+		parallel {
+			stage('Build') { 
+				steps {
+					sh 'sleep 5; echo "This is a Build stage"'
+				}
 			}
-		}
-		
-		stage('Test'){
-			steps {
-				sh '''
-					sleep 5
-					echo "This is a Test stage"
-				'''	
+			
+			stage('Test'){
+				steps {
+					sh '''
+						sleep 5
+						echo "This is a Test stage"
+					'''	
+				}
 			}
-		}
+		} 
 		
 		stage('Deploy'){
 			steps {
