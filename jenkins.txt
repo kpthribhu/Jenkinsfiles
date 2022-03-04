@@ -67,4 +67,11 @@ Declarative pipeline
 		
 		Types of agent 
 			any - Runs pipeline agents on any available executors.
-			none - 
+			none - If we define agent as none at the pipeline level, it means we need to 
+				   define agent at the stage level.
+                 - If we want to control the execution of each stage we need to use agent 
+				   as none at pipeline level and we can define agent for each stage.
+				
+				IQ - How to run a particular stage on a node ?	
+				
+			label - Both at agent and pipeline level we can use this type of agent.	
